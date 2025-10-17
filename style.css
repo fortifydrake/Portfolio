@@ -116,6 +116,33 @@ hr {
     margin-top: 0;
 }
 
+.Tool-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+
+.Tool-list li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Tool-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Tool-icon {
+    margin-right: 8px;
+    color: #1e3a8a;
+}
+
 /* --- 3. Skills Section --- */
 
 .skills-list {
