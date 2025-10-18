@@ -1,6 +1,6 @@
 /* --- Global Styles & Typography --- */
 html {
-    scroll-behavior: smooth; /* Smooth scrolling when using nav links */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -8,161 +8,134 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f7f9; 
+    background-color: #f4f7f9;
 }
 
 .container {
     max-width: 900px;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 20px;
 }
 
 h1, h2 {
     font-family: 'Poppins', sans-serif;
-    color: #1e3a8a; /* Deep Blue for Headings */
+    color: #1e3a8a;
 }
 
 a {
-    color: #2563eb; 
-    text-decoration: none; 
-    transition: color 0.3s ease; 
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #1d4ed8; 
+    color: #1d4ed8;
 }
 
 hr {
     border: 0;
     height: 1px;
-    background-color: #ddd; 
+    background-color: #ddd;
     margin: 30px 0;
 }
 
 /* --- 1. Navigation Bar Styling --- */
 
 .navbar {
-    background-color: #1e3a8a; /* Dark Blue */
+    background-color: #1e3a8a;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 15px 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    position: sticky; /* Make the navbar stick to the top */
+    position: sticky;
     top: 0;
     z-index: 1000;
+    flex-wrap: wrap; /* Key for mobile stacking */
 }
 
-.nav-brand {
+/* NEW: Styles for the H1 title */
+.nav-title {
     color: white;
-    font-size: 1.6em;
-    font-weight: 700;
+    font-size: xx-large;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin: 0; 
+    flex-grow: 1;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
 }
 
 .nav-list {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 30px; 
+    display: flex; /* Desktop default */
+    gap: 30px;
 }
 
 .nav-list a {
     color: #c7d2fe;
     font-weight: 500;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
     border-bottom: 2px solid transparent;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 .nav-list a:hover {
-    color: white; 
-    border-bottom: 2px solid #93c5fd; 
-}
-
-.nav-cta {
-    background-color: #2563eb; 
-    color: white !important;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-weight: 600;
-    border-bottom: none !important;
-}
-
-.nav-cta:hover {
-    background-color: #1d4ed8;
+    color: white;
+    border-bottom: 2px solid #93c5fd;
 }
 
 /* --- 2. About Me Section (Image & Text Layout) --- */
 
-.profile-area {
-    display: flex;
-    align-items: flex-start; /* Aligns items to the top */
+.about-section-wrapper {
+    display: flex; 
+    align-items: flex-start; 
     gap: 30px;
     margin-bottom: 20px;
 }
 
+.profile-area {
+    flex-shrink: 0;
+}
+
 .profile-pic {
-    /* Styles from your inline HTML, now in CSS */
     height: 230px;
     width: 230px;
     border-radius: 50%;
-    border: 2px solid #1e3a8a; /* Match border color to header */
-    object-fit: cover; /* Ensures image fills the circle */
-    flex-shrink: 0; /* Prevents image from shrinking in small screens */
+    border: 2px solid #1e3a8a;
+    object-fit: cover;
 }
 
 .about-content h2 {
     margin-top: 0;
 }
 
-.Tool-list {
+.Tool-list, .skills-list {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; 
+    gap: 10px; 
 }
 
-.Tool-list li {
+.Tool-list li, .skills-list li {
     background-color: #ffffff;
     border: 1px solid #ddd;
     padding: 8px 15px;
     border-radius: 20px;
     font-weight: 600;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 0.9em;
 }
 
-.Tool-list li:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.Tool-icon {
-    margin-right: 8px;
-    color: #1e3a8a;
-}
-
-/* --- 3. Skills Section --- */
-
-.skills-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px; 
-}
-
-.skills-list li {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-weight: 600;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.skills-list li:hover {
+.Tool-list li:hover, .skills-list li:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -172,8 +145,29 @@ hr {
     color: #1e3a8a;
 }
 
-/* --- Projects CTA Button --- */
+/* --- Projects Section --- */
 
+.project-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    flex: 1 1 calc(50% - 20px); 
+    min-width: 300px; 
+}
+
+.project-card h3 {
+    color: #1e3a8a;
+    margin-top: 0;
+}
 
 .btn-primary {
     display: inline-block;
@@ -185,6 +179,7 @@ hr {
     font-weight: 600;
     transition: background-color 0.3s ease;
     margin-left: 10px;
+    margin-top: 10px;
 }
 
 .btn-primary:hover {
@@ -193,7 +188,7 @@ hr {
 
 /* --- Education Table --- */
 .education-table {
-    border-collapse: collapse; /* Essential for a neat, single border line */
+    border-collapse: collapse; 
     width: 100%;
     margin-top: 20px;
     box-shadow: 0 2px 5px rgba(249, 249, 249, 0.1);
@@ -243,4 +238,84 @@ hr {
 
 .contact-footer a:hover {
     color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* --- Container & General --- */
+    .container {
+        padding: 10px; 
+    }
+
+    /* --- Navigation Bar FIXES --- */
+    .nav-toggle {
+        display: block; /* Show the hamburger icon */
+        margin-left: auto; /* Push the toggle to the right */
+    }
+
+    .nav-list {
+        display: none; 
+        width: 100%; 
+        flex-direction: column; 
+        gap: 0;
+        text-align: center;
+        /* Use negative margins to span the full width of the viewport */
+        margin: 10px -20px -15px -20px; 
+        padding: 0;
+        background-color: #1e3a8a; 
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-list.active {
+        display: flex; 
+    }
+    
+    .nav-list li {
+        width: 100%;
+        border-top: 1px solid #2e59a8; 
+    }
+
+    .nav-list a {
+        display: block; 
+        padding: 12px 0;
+        border-bottom: none;
+    }
+    
+    /* --- About Me Section --- */
+    .about-section-wrapper {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .profile-pic {
+        height: 150px; 
+        width: 150px;
+    }
+
+    /* --- Projects Section --- */
+    .project-cards {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .project-card {
+        flex: 1 1 100%; 
+        min-width: unset; 
+    }
+
+    /* Stack and widen buttons */
+    .project-card .btn-primary {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box; 
+        margin-bottom: 10px;
+    }
+    
+    /* Remove bottom margin from the last button in a card */
+    .project-card .btn-primary:last-child {
+        margin-bottom: 0;
+    }
+
 }

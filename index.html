@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
         <a href='#' class="nav-brand"></a>
-        <h1 style="color: white; font-size: xx-large; font-family: 'Roboto', sans-serif; text-align:left;">My Portfolio</h1>
-        <a href="#" class="nav-toggle" id="nav-toggle"></a>
+        <h1 class="nav-title">My Portfolio</h1>
+        <a href="#" class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </a>
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -23,20 +25,17 @@
         </ul>
     </nav>
     <main class="container">
-    <header class="header">
-        <h1 style="text-align: center; color:whitesmoke;font-size:xx-large">Aditya Prasad</h1>
-    </header>
+    
     <section class="about-section-wrapper" id="about">
-            <div class="profile-area">
-                <img src="1721475284089.jpeg" alt="Aditya Prasad" class="profile-pic" style="border-radius: 100%;"/>
-                
-                <div class="about-content">
-                    <h2>About Me</h2>
-                    <p>Hello! I'm Aditya Prasad, a Machine learning enthusiast with a strong grasp of Machine Learning, Natural Language Processing (NLP), Data Structures, and Algorithms. I am currently expanding my expertise into image processing and web development while pursuing my BTech in Data Science from SMIT.</p>
-                </div>
-            </div>
-        </section>
-        <hr />
+        <div class="profile-area">
+            <img src="1721475284089.jpeg" alt="Aditya Prasad" class="profile-pic" style="border-radius: 100%;"/>
+        </div>
+        <div class="about-content" >
+            <h2>About Me</h2>
+            <p>Hello! I'm Aditya Prasad, a Machine learning enthusiast with a strong grasp of Machine Learning, Natural Language Processing (NLP), Data Structures, and Algorithms. I am currently expanding my expertise into image processing and web development while pursuing my BTech in Data Science from SMIT.</p>
+        </div>
+    </section>
+    <hr />
 
     <section id="skills">
         <h2>Skills</h2>
@@ -172,5 +171,24 @@
             <p style="color:white">Email: prasadaditya316@gmail.com <br />LinkedIn: <a href="https://www.linkedin.com/in/aditya-prasad-5bb7b7296/">View Profile</a> <br /> GitHub: <a href="https://github.com/fortifydrake">View Profile</a></p>
         </footer>
     </div>
+    
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        navToggle.addEventListener('click', function(e) {
+            e.preventDefault(); 
+            navList.classList.toggle('active');
+        });
+        
+        const navLinks = document.querySelectorAll('.nav-list a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navList.classList.contains('active')) {
+                    navList.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
