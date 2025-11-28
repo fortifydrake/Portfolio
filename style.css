@@ -302,80 +302,140 @@ hr {
 
 
 @media screen and (max-width: 768px) {
-    /* --- Container & General --- */
+
+    /* --- GENERAL MOBILE FIXES --- */
     .container {
-        padding: 10px; 
+        padding: 12px;
     }
 
-    /* --- Navigation Bar FIXES --- */
+
+    /* -------------------------------
+       NAVIGATION (Hamburger Menu)
+    --------------------------------*/
     .nav-toggle {
-        display: block; /* Show the hamburger icon */
-        margin-left: auto; /* Push the toggle to the right */
+        display: block; 
+        margin-left: auto;
+        cursor: pointer;
     }
 
     .nav-list {
-        display: none; 
-        width: 100%; 
-        flex-direction: column; 
-        gap: 0;
-        text-align: center;
-        /* Use negative margins to span the full width of the viewport */
-        margin: 10px -20px -15px -20px; 
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #1e3a8a;
         padding: 0;
-        background-color: #1e3a8a; 
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        margin: 10px -20px 0 -20px; /* Full-width menu */
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.25);
     }
 
     .nav-list.active {
-        display: flex; 
+        display: flex;
     }
-    
+
     .nav-list li {
         width: 100%;
-        border-top: 1px solid #2e59a8; 
+        border-top: 1px solid #2e59a8;
     }
 
     .nav-list a {
-        display: block; 
-        padding: 12px 0;
-        border-bottom: none;
+        display: block;
+        padding: 14px 0;
+        color: white;
     }
-    
-    /* --- About Me Section --- */
+
+
+    /* -------------------------------
+       ABOUT SECTION (Center Everything)
+    --------------------------------*/
     .about-section-wrapper {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        gap: 20px;
     }
 
     .profile-pic {
-        height: 150px; 
         width: 150px;
+        height: 150px;
+        border-radius: 50%;
     }
 
-    /* --- Projects Section --- */
+
+    /* -------------------------------
+       PROJECTS SECTION (Stack)
+    --------------------------------*/
     .project-cards {
-        flex-direction: column; 
-        gap: 15px;
+        flex-direction: column;
+        gap: 18px;
     }
 
     .project-card {
-        flex: 1 1 100%; 
-        min-width: unset; 
+        width: 100%;
+        min-width: auto;
     }
 
-    /* Stack and widen buttons */
+    /* Buttons full-width on mobile */
     .project-card .btn-primary {
-        display: block;
         width: 100%;
-        margin-left: 0;
-        box-sizing: border-box; 
-        margin-bottom: 10px;
+        margin: 10px 0 0 0;
+        box-sizing: border-box;
     }
-    
-    /* Remove bottom margin from the last button in a card */
+
     .project-card .btn-primary:last-child {
         margin-bottom: 0;
+    }
+
+
+    /* -------------------------------
+    CONTACT SECTION — COMPACT
+    --------------------------------*/
+    .contact-card {
+        width: 100%;
+        max-width: 350px;
+        padding: 18px !important;
+        margin: 0 auto;
+        border-radius: 14px;
+    }
+
+    .contact-card h2 {
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+    }
+
+    .subtext {
+        margin-bottom: 18px;
+        font-size: 0.9rem;
+    }
+
+    .contact-form {
+        gap: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+        border-radius: 8px;
+    }
+
+    .contact-form textarea {
+        min-height: 70px; /* Much smaller */
+    }
+
+    .contact-form button {
+        padding: 10px;
+        font-size: 0.95rem;
+        border-radius: 8px;
+    }
+
+    /* Contact links smaller too */
+    .contact-links {
+        margin-top: 10px;
+    }
+
+    .contact-links a {
+        font-size: 0.9rem;
     }
 
 }
