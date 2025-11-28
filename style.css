@@ -219,26 +219,86 @@ hr {
 }
 
 /* --- Contact Footer --- */
-.contact-footer {
-    background-color: #1e3a8a; 
-    color: white;
-    padding: 30px 20px;
+/* Contact Section */
+.contact-section {
+    background:#1e398a;
+    padding: 60px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    width: 100%;
+    max-width: 550px;
+    background:#034998;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
     text-align: center;
-    margin-top: 50px;
 }
 
-.contact-footer h2 {
+.contact-card h2 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    color: #cccccc;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #ffffff;
+}
+
+.contact-form button {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(57, 115, 238);
     color: white;
-    margin-bottom: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.contact-footer a {
-    color: #93c5fd; 
+.contact-form button:hover {
+    background: rgb(19, 86, 229);
 }
 
-.contact-footer a:hover {
-    color: #fff;
+/* Links */
+.contact-links {
+    margin-top: 20px;
 }
+
+.contact-links a {
+    color: #4ca3ff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 5px;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
 
 
 @media screen and (max-width: 768px) {
