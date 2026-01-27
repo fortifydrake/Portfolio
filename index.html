@@ -3,234 +3,357 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Aditya Prasad - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href='#' class="nav-brand"></a>
-        <h1 class="nav-title">My Portfolio</h1>
+        <h1 class="nav-title"><i class="fas fa-code"></i> Aditya Prasad</h1>
         <a href="#" class="nav-toggle" id="nav-toggle">
             <i class="fas fa-bars"></i>
         </a>
         <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#leetcode" class="nav-link">LeetCode</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
-    <main class="container">
-    
-    <section class="about-section-wrapper" id="about">
-        <div class="profile-area">
-            <img src="1721475284089.jpeg" alt="Aditya Prasad" class="profile-pic" style="border-radius: 100%;"/>
-        </div>
-        <div class="about-content" >
-            <h2>About Me</h2>
-            <p>Hello! I'm Aditya Prasad, a Machine learning enthusiast with a strong grasp of Machine Learning, Natural Language Processing (NLP), Data Structures, and Algorithms. I am currently expanding my expertise into image processing and web development while pursuing my BTech in Data Science from SMIT.</p>
-        </div>
-    </section>
-    <hr />
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li><i class="fab fa-python skill-icon"></i> Python</li>
-            <li><i class="fab fa-html5 skill-icon"></i> HTML</li>
-            <li><i class="fab fa-css3-alt skill-icon"></i>CSS</li>
-            <li><i class="fab fa-java skill-icon"></i> Java</li>
-            <li><i class="fas fa-c skill-icon"></i> C</li>
-            <li><i class="fas fa-sitemap skill-icon"></i> DSA</li>
-            <li><i class="fas fa-brain skill-icon"></i> Machine Learning</li>
-            <li><i class="fas fa-language skill-icon"></i> Natural Language Processing</li>
-            <li><i class="fas fa-chart-bar skill-icon"></i> Data Analysis</li>
-            <li><i class="fas fa-laptop-code skill-icon"></i> Web Development</li>
-        </ul>
-    </section>
-    <hr />
-    <section id="education">
-        <h2>Education</h2>
-        <table class="education-table">
-            <thead>
-            <tr>
-                <th>University Name</th>
-                <th>Standard</th>
-                <th>Grade</th>
-                <th>Year</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        DAV Public School
-                    </td>
-                    <td>
-                        10th
-                    </td>
-                    <td>
-                        77.6%
-                    </td>
-                    <td>
-                        2022
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        DAV Public School
-                    </td>
-                    <td>
-                        12th
-                    </td>
-                    <td>
-                        73%
-                    </td>
-                    <td>
-                        2024
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        SMIT
-                    </td>
-                    <td>
-                        Btech 
-                    </td>
-                    <td>
-                        --
-                    </td>
-                    <td>
-                        2024 --
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </Section>
-    <hr/>
-    <!--<section id="certiificates">
-        <h2>Certificates</h2>
-        <div>
-            <h4 style="text-align: center;">not added yet</h4>
+    <main class="container">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm Aditya Prasad</h1>
+                <p class="hero-subtitle">ML Engineer | Data Scientist | Data Engineering</p>
+                <p class="hero-description">Building intelligent solutions with Machine Learning, NLP, and cutting-edge technologies</p>
+                <a href="#contact" class="btn-cta">Get In Touch</a>
+            </div>
+            <div class="hero-image">
+                <img src="1721475284089.jpeg" alt="Aditya Prasad" class="profile-pic-hero"/>
+            </div>
         </div>
     </section>
-    <hr />-->
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-header">
+            <h2><i class="fas fa-user-circle"></i> About Me</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="about-content">
+            <p>I'm a passionate <strong>Machine Learning enthusiast</strong> with expertise in NLP, Data Structures, and Algorithms. Currently pursuing my BTech in Data Science from SMIT, I love building innovative solutions that solve real-world problems.</p>
+            <p>My journey spans from ML model development to web application design. I'm constantly learning new technologies and improving my craft in data science and software engineering.</p>
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Expert in ML algorithms and model optimization</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-language"></i>
+                    <h3>NLP</h3>
+                    <p>Natural Language Processing & Text Analysis</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-sitemap"></i>
+                    <h3>DSA</h3>
+                    <p>Data Structures & Algorithm optimization</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Engineering</h3>
+                    <p>Data pipelines and ETL processes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="section-header">
+            <h2><i class="fas fa-tools"></i> Skills & Expertise</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul class="skills-list">
+                    <li><i class="fab fa-python"></i> Python</li>
+                    <li><i class="fab fa-java"></i> Java</li>
+                    <li><i class="fas fa-c"></i> C</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Data Science & ML</h3>
+                <ul class="skills-list">
+                    <li><i class="fas fa-brain"></i> Machine Learning</li>
+                    <li><i class="fas fa-language"></i> NLP</li>
+                    <li><i class="fas fa-chart-bar"></i> Data Analysis</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Data Engineering Tools</h3>
+                <ul class="skills-list">
+                    <li><i class="fas fa-database"></i> DataBricks</li>
+                    <li><i class="fas fa-fire"></i> PySpark</li>
+                    <li><i class="fas fa-table"></i> SQL</li>
+                    <li><i class="fas fa-project-diagram"></i> Data Pipeline</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Algorithms & DSA</h3>
+                <ul class="skills-list">
+                    <li><i class="fas fa-sitemap"></i> Data Structures</li>
+                    <li><i class="fas fa-code-branch"></i> Algorithms</li>
+                    <li><i class="fas fa-project-diagram"></i> Design Patterns</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section class="projects-section" id="projects">
-        <h2>Projects</h2>
+        <div class="section-header">
+            <h2><i class="fas fa-rocket"></i> Featured Projects</h2>
+            <div class="header-line"></div>
+        </div>
         <div class="project-cards">
             <div class="project-card">
-                <h3>Spam Detection System</h3>
-                <p>A machine learning-based system that classifies emails as spam or not spam using natural language processing and Machine learning techniques.</p>
-                <h4>Tools used</h4>
-                <section id="Tools used">
-                    <ul class="Tool-list">
-                        <li><i class="fab fa-python skill-icon"></i> Python</li>
-                        <li><i class="fab fa-html5 skill-icon"></i> HTML</li>
-                        <li><i class="fab fa-css3-alt skill-icon"></i>CSS</li>
-                        <li><i class="fas fa-brain skill-icon"></i> Machine Learning</li>
-                        <li><i class="fas fa-language skill-icon"></i> Natural Language Processing</li>
-                        <li><i class="fas fa-chart-bar skill-icon"></i> Data Analysis</li>
-                        <li><i class="fas fa-laptop-code skill-icon"></i> Web Development</li>
-                    </ul>
-                </section>
-                <a href="https://spamclassification-latest.onrender.com/" class="btn-primary">Visit working prototype</a>
-                <a href="https://github.com/fortifydrake/spamclassification" class="btn-primary">View Project on GitHub</a>
+                <div class="project-badge">Live</div>
+                <h3> Automated Self-Healing MLOps Pipeline</h3>
+                <p class="project-desc">
+                    A production-ready monitoring system that utilizes <b>Evidently AI</b> to detect statistical data drift and quality issues. 
+                    The pipeline features an automated "self-healing" loop orchestrated by <b>Apache Airflow</b>, which triggers model retraining 
+                    whenever drift (p < 0.05) is identified, ensuring model reliability in dynamic environments.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">MLOps</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Airflow</span>
+                    <span class="tech-tag">Evidently AI</span>
+                    <span class="tech-tag">Streamlit</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://fortaditya-self-healing-ml-pipeline.hf.space/" class="btn-secondary">View Project</a>
+                    <a href="https://github.com/fortifydrake/self_healing_pipeline" class="btn-secondary">GitHub</a>
+                </div>
             </div>
-            <!--<div class="project-card">
-                <h3>Image Classification for Bollywood Actors</h3>
-                <p>A machine learning project that classifies images of Bollywood actors using deep learning techniques.</p>
-                <a href="" class="btn-primary">View Project</a>
-            </div>-->
-            <div class="project-card">
-                <h3>Chatbot using Dialogflow</h3>
-                <!--<div class="slideshow-container">
-                    <img class="slide active" src="./image.png" alt="Chatbot Image 1">
-                    <img class="slide" src="./image2.png" alt="Chatbot Image 2">
-                </div>-->
 
-                <p>Our project is an AI-powered conversational chatbot platform built using Dialogflow and a FastAPI backend, designed to automate customer interactions across multiple digital services. The chatbot understands user queries in natural language and handles tasks such as placing orders, tracking orders, cancellations, confirmations, and feedback collection in real time.</p>
-                <h4>Tools Used</h4>
-                <section id="Tools used">
-                    <ul class="Tool-list">
-                        <li><i class="fas fa-robot skill-icon"></i> Dialogflow</li>
-                        <li><i class="fab fa-html5 skill-icon"></i> HTML</li>
-                        <li><i class="fas fa-server skill-icon"></i> FastAPI</li>
-                    </ul>
-                </section>
-                <a href="https://accesco-chatbot.onrender.com" class="btn-primary">Visit working prototype</a>
-                <a href="https://github.com/fortifydrake/Accesco_chatbot" class="btn-primary">View Project on GitHub</a>
+            <div class="project-card">
+                <div class="project-badge">Live</div>
+                <h3>Spam Detection System</h3>
+                <p class="project-desc">ML-powered email classification system using NLP and machine learning to accurately detect spam emails with high precision and recall.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">ML</span>
+                    <span class="tech-tag">Web</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://spamclassification-latest.onrender.com/" class="btn-secondary" target="_blank">Visit Live</a>
+                    <a href="https://github.com/fortifydrake/spamclassification" class="btn-secondary" target="_blank">GitHub</a>
+                </div>
             </div>
-            <!--<div class="project-card">
-                <h3>NMT based Bidirectional Translator</h3>
-                <p>A NMT based Bidirectional Translator for Hindi-English using NLP,Transformer and ML.</p>
-                <h4>Tools Used</h4>
-                <section id="Tools used">
-                    <ul class="Tool-list">
-                        <li><i class="fab fa-html5 skill-icon"></i> NLP</li>
-                        <li><i class="fab fa-css3-alt skill-icon"></i>ML</li>
-                        <li><i class="fas fa-laptop-code skill-icon"></i> Transformer</li>
-                    </ul>
-                </section>
-                <a href="https://fortifydrake.github.io/Portfolio/" class="btn-primary">Visit working prototype</a>
-                <a href="https://github.com/fortifydrake/Portfolio" class="btn-primary">View Project on GitHub</a>
-            </div>-->
+
+            <div class="project-card">
+                <div class="project-badge">Live</div>
+                <h3>AI Chatbot - Dialogflow</h3>
+                <p class="project-desc">Conversational AI platform with Dialogflow and FastAPI backend. Handles customer interactions including orders, tracking, and feedback in real-time.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Dialogflow</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">NLP</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://accesco-chatbot.onrender.com" class="btn-secondary" target="_blank">Visit Live</a>
+                    <a href="https://github.com/fortifydrake/Accesco_chatbot" class="btn-secondary" target="_blank">GitHub</a>
+                </div>
+            </div>
+
             <div class="project-card">
                 <h3>Portfolio Website</h3>
-                <p>A personal portfolio website built using HTML and CSS to showcase my skills and projects.</p>
-                <h4>Tools Used</h4>
-                <section id="Tools used">
-                    <ul class="Tool-list">
-                        <li><i class="fab fa-html5 skill-icon"></i> HTML</li>
-                        <li><i class="fab fa-css3-alt skill-icon"></i>CSS</li>
-                        <li><i class="fas fa-laptop-code skill-icon"></i> Web Development</li>
-                    </ul>
-                </section>
-                <a href="https://fortifydrake.github.io/Portfolio/" class="btn-primary">Visit working prototype</a>
-                <a href="https://github.com/fortifydrake/Portfolio" class="btn-primary">View Project on GitHub</a>
+                <p class="project-desc">Modern, responsive portfolio website showcasing projects and skills with clean design and smooth interactions.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://fortifydrake.github.io/Portfolio/" class="btn-secondary" target="_blank">Visit Live</a>
+                    <a href="https://github.com/fortifydrake/Portfolio" class="btn-secondary" target="_blank">GitHub</a>
+                </div>
             </div>
         </div>
     </section>
-    <hr />
-    <footer id="contact" class="contact-section">
-        <div class="contact-card", ahref="quoto.jpg">
-            <h2 style="color:white">Contact Me</h2>
-            <p class="subtext">Feel free to reach out for collaborations or opportunities!</p>
 
-            <form class="contact-form" action="https://formspree.io/f/xkglqklj" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="_replyto" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-
-            <div class="contact-links">
-                <a href="mailto:prasadaditya316@gmail.com">Email</a> •
-                <a href="https://www.linkedin.com/in/aditya-prasad-5bb7b7296/" target="_blank">LinkedIn</a> •
-                <a href="https://github.com/fortifydrake" target="_blank">GitHub</a>
+    <!-- LeetCode Section -->
+    <section class="dsa-section" id="leetcode">
+        <div class="section-header">
+            <h2><i class="fas fa-code"></i> LeetCode</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="dsa-container">
+            <div class="dsa-card">
+                <div class="dsa-icon"><i class="fas fa-list"></i></div>
+                <h3>Data Structures</h3>
+                <ul>
+                    <li>Arrays & Lists</li>
+                    <li>Stacks & Queues</li>
+                    <li>Linked Lists</li>
+                    <li>Hash Tables</li>
+                    <li>Trees & Graphs</li>
+                </ul>
+                <a href="https://github.com/fortifydrake/LeetCode-solution" class="dsa-github-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
             </div>
         </div>
-    </footer>
-    <p style="text-align:center">built with❤️ by Aditya Prasad</p>
+    </section>
 
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="section-header">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>BTech in Data Science</h3>
+                    <p class="institution">SMIT (Sikkim Manipal Institute of Technology)</p>
+                    <p class="timeline-date">2024 - Ongoing</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>12th Grade - Science</h3>
+                    <p class="institution">DAV Public School</p>
+                    <p class="grades">73%</p>
+                    <p class="timeline-date">2024</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>10th Grade</h3>
+                    <p class="institution">DAV Public School</p>
+                    <p class="grades">77.6%</p>
+                    <p class="timeline-date">2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates-section" id="certificates">
+        <div class="section-header">
+            <h2><i class="fas fa-certificate"></i> Certifications & Achievements</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="certificates-container">
+            <div class="certificate-card">
+                <div class="cert-icon"><i class="fas fa-check-circle"></i></div>
+                <h3>Machine Learning Specialization</h3>
+                <p class="cert-issuer">Coursera</p>
+                <p class="cert-desc">Comprehensive ML algorithms and deep learning</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="contact-section" id="contact">
+        <div class="section-header" style="color: white;">
+            <h2><i class="fas fa-envelope"></i> Let's Connect</h2>
+            <div class="header-line" style="background: white;"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-card">
+                <h3>Get In Touch</h3>
+                <p>Have a project in mind? Let's collaborate and create something amazing!</p>
+
+                <form class="contact-form" action="https://formspree.io/f/xkglqklj" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="_replyto" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>Email</p>
+                        <a href="mailto:prasadaditya316@gmail.com">prasadaditya316@gmail.com</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-linkedin"></i>
+                    <div>
+                        <p>LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/aditya-prasad-5bb7b7296/" target="_blank">Connect with me</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-github"></i>
+                    <div>
+                        <p>GitHub</p>
+                        <a href="https://github.com/fortifydrake" target="_blank">View my code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-credit">Built with <i class="fas fa-heart"></i> by Aditya Prasad</p>
+    </footer>
+
+    </main>
     
     <script>
         const navToggle = document.getElementById('nav-toggle');
         const navList = document.querySelector('.nav-list');
+        const navLinks = document.querySelectorAll('.nav-link');
 
+        // Toggle mobile menu
         navToggle.addEventListener('click', function(e) {
-            e.preventDefault(); 
+            e.preventDefault();
+            e.stopPropagation();
             navList.classList.toggle('active');
         });
         
-        const navLinks = document.querySelectorAll('.nav-list a');
+        // Close menu when link is clicked
         navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (navList.classList.contains('active')) {
-                    navList.classList.remove('active');
+            link.addEventListener('click', function(e) {
+                navList.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!navToggle.contains(e.target) && !navList.contains(e.target)) {
+                navList.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
                 }
             });
         });
