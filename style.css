@@ -495,6 +495,7 @@ section:nth-child(even) {
 
 .project-card.featured-project {
     border: 2px solid var(--primary-light);
+    margin-bottom: 24px;
     background: linear-gradient(135deg, #f9fafb 0%, white 100%);
 }
 
